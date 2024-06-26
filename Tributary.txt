@@ -1,30 +1,30 @@
 getgenv().script_key = script_key; -- DO NOT TOUCH
-getgenv().Tributary = {
+getgenv().tributary = {
     ['Aimbot'] = {
         Keybind = Enum.KeyCode.E,
         CamlockPrediction = 0.128,
-        Prediction = 0.132,
+        Prediction = 0.11,
 
         ['Basic'] = true,
-        TargetPart = "HumanoidRootPart",  -- // don't use nearestpart and basic at the same time as it will not work anymore
+        TargetPart = "Head",  -- // don't use nearestpart and basic at the same time as it will not work anymore
 
         ['NearestPart'] = false,
         MultipleTargetPart = {"Head","HumanoidRootPart"},
 
-        CameraSmoothing = 0.086,
+        CameraSmoothing = 0.0180,
         CameraShake = 0,
-        JumpOffset = 0,
+        JumpOffset = -1.65,
     },
     ['Checks'] = {
         DisableOnPlayerDeath = true,
         CheckKoStatus = true,
     },
     ['Macro_Settings'] = {
-        Enabled = false,
+        Enabled = true,
         Keybind = "x",
         Speed = 0.05,
         Type = "Third" -- // "First", "Third"
     },
 }
 
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/e7a44144ec2d64d569f3c41bd587548a.lua"))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/26cd4b6f993d6230c2a404bf12be3a03.lua"))()
