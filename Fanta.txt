@@ -1,19 +1,19 @@
 getgenv().script_key = script_key; -- DO NOT TOUCH
-getgenv().tributary = {
+getgenv().fanta = {
     ['Aimbot'] = {
         Keybind = Enum.KeyCode.E,
         CamlockPrediction = 0.128,
-        Prediction = 0.11,
+        Prediction = 0.132,
 
         ['Basic'] = true,
-        TargetPart = "Head",  -- // don't use nearestpart and basic at the same time as it will not work anymore
+        TargetPart = "HumanoidRootPart",  -- // don't use nearestpart and basic at the same time as it will not work anymore
 
         ['NearestPart'] = false,
         MultipleTargetPart = {"Head","HumanoidRootPart"},
 
-        CameraSmoothing = 0.0180,
+        CameraSmoothing = 0.086,
         CameraShake = 0,
-        JumpOffset = -1.65,
+        JumpOffset = 0,
     },
     ['Checks'] = {
         DisableOnPlayerDeath = true,
